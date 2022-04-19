@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Math Facts</title>
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Get Faster with Facts!</h1>
+		<section class="main">
+			<section class="opp-selector">
+				<p>Select which type of Math Fact you want to practice: </p>
+				<div>
+					<input type="radio" id="add" name="opp" value="add" checked>
+					<label for="add">Addition</label>
+				</div>
+				<div>
+					<input type="radio" id="sub" name="opp" value="sub">
+					<label for="sub">Subtraction</label>
+				</div>
+				<div>
+					<input type="radio" id="mul" name="opp" value="mul">
+					<label for="mul">Multiplication</label>
+				</div>
+				<div>
+					<input type="radio" id="div" name="opp" value="div">
+					<label for="div">Division</label>
+				</div>
+				<div>
+					<label for="number" id="probs">How many facts do you want to practice?</label>
+					<input type="number" name="number" value="" id="numProbs">
+					<button type="button" name="button">Start</button>
+				</div>  
+			</section>
+		
+			<section class="container">
+				<h6></h6>
+				<h2 id="expression"></h2>
+				<input type="text" name="answer" id="answer">
+				<button type="button" name="check" id="check">Check</button>
+				<div class="msg">
+					<h5 class="hidden">Good Job!</h5>
+					<h4></h4>
+				</div>
+			</section>
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
